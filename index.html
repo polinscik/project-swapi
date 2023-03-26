@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Star Wars search system</title>
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <main class="main">
+            <h1 class="title">Star Wars search system</h1>
+            <h3 class="subtitle">What are you willing to find?</h3>
+            <div class="form">
+                <form class="search-form" action="">
+                    <select name="type" id="selectType">
+                        <option value="">Not chosen</option>
+                        <option value="people">People</option>
+                        <option value="films">Films</option>
+                        <option value="starships">Starships</option>
+                        <option value="vehicles">Vehicles</option>
+                        <option value="species">Species</option>
+                        <option value="planets">Planets</option>
+                    </select>
+                    <select name="option" id="selectOption" disabled></select>
+
+                    <button id="searchBtn" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="info">
+                <div class="errorDiv"></div>
+                <div class="result"></div>
+            </div>
+        </main>
+        <script src="./bundle.js"></script>
+    </body>
+</html>
