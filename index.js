@@ -95,7 +95,7 @@ function handleError(error, errorCode, errorContainer) {
     } else if (errorCode >= 300) {
         errorContainer.innerText = `Redirected: ${error}`;
     } else {
-        errorContainer.innerText = `${error}`;
+        errorContainer.innerText = `Error! (${error.name}) Please hold. `;
     }
 }
 
