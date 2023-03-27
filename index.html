@@ -18,10 +18,10 @@
                         <option value="">Not chosen</option>
                         <option value="people">People</option>
                         <option value="films">Films</option>
-                        <option value="starships">Starships</option>
-                        <option value="vehicles">Vehicles</option>
                         <option value="species">Species</option>
                         <option value="planets">Planets</option>
+                        <!-- <option value="starships">Starships</option>
+                        <option value="vehicles">Vehicles</option> -->
                     </select>
                     <select name="option" id="selectOption" disabled></select>
 
@@ -29,8 +29,9 @@
                 </form>
             </div>
             <div class="info">
-                <div class="errorDiv"></div>
-                <div class="result"></div>
+                <div id="errorDiv" class="errorDiv"></div>
+                <div class="loading" id="loading"></div>
+                <div id="result" class="result"></div>
             </div>
         </main>
         <script src="./bundle.js"></script>

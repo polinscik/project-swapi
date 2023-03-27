@@ -1,0 +1,67 @@
+body {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    background-color: midnightblue;
+    color: whitesmoke;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.errorDiv {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    margin-bottom: 1rem;
+}
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+select {
+    font-size: larger;
+}
+#searchBtn {
+    padding: 0.5rem 1rem;
+    background-color: rgb(127, 182, 255);
+    border: 5px double midnightblue;
+    font-size: larger;
+}
+
+.result {
+    margin: 1rem 0;
+    padding: 0.7rem;
+    font-size: 110%;
+    & p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.styled {
+    border: 10px double rgb(127, 182, 255);
+}
+.loading {
+    display: none;
+    margin: auto;
+    margin-top: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid rgb(56, 56, 233);
+    border-top: 5px solid white;
+    border-radius: 100%;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} ;
