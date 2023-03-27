@@ -28,6 +28,7 @@ selectType.addEventListener("change", () => {
             return result.json();
         })
         .then((json) => {
+            selectOption.replaceChildren();
             let index = 1;
             json.results.forEach((element) => {
                 if (selectedValue == "films") {
